@@ -217,7 +217,7 @@ body {
 }
 
 .about .row .about-img {
-  flex: 1 1 45rem;
+  /* flex: 1 1 45rem; */
 }
 
 .about .row .about-img img {
@@ -225,8 +225,8 @@ body {
 }
 
 .about .row .content {
-  flex: 1 1 35rem;
-  padding: 0 1rem;
+  flex: 1 1 100rem;
+  padding: 0 1.5rem;
 }
 
 .about .row .content h3 {
@@ -239,6 +239,7 @@ body {
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* menu section */
