@@ -206,14 +206,15 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  color: var(--primary);
 }
 
-.about h2 span,
+/* .about h2 span,
 .menu h2 span,
 .prestasi h2 span,
 .pemain h2 span {
   color: var(--primary);
-}
+} */
 
 .about .row {
   display: flex;
