@@ -115,9 +115,9 @@ body {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 7px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 2px 2px 0;
   user-select: none;
 }
 
@@ -194,13 +194,15 @@ body {
 /* about section */
 .about,
 .menu,
-.prestasi {
+.prestasi,
+.pemain {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .menu h2,
-.prestasi h2 {
+.prestasi h2,
+.pemain h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -208,7 +210,8 @@ body {
 
 .about h2 span,
 .menu h2 span,
-.prestasi h2 span {
+.prestasi h2 span,
+.pemain h2 span {
   color: var(--primary);
 }
 
@@ -217,7 +220,7 @@ body {
 }
 
 .about .row .about-img {
-  /* flex: 1 1 45rem; */
+  flex: 1 1 45rem;
 }
 
 .about .row .about-img img {
@@ -240,6 +243,77 @@ body {
   font-weight: 200;
   line-height: 1.6;
   text-align: justify;
+}
+
+/* Pemain */
+
+#pemain {
+  font-family: "poppins", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#pemain td,
+#pemain th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: white;
+  box-sizing: border-box;
+}
+
+#pemain th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+}
+
+.info-pemain {
+  display: flex;
+  align-items: center;
+}
+
+.info-pemain a {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.info-pemain a:hover {
+  color: var(--primary);
+}
+
+.info-pemain img {
+  margin-right: 10px;
+}
+
+/* prestasi */
+
+#prestasi {
+  font-family: "poppins", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#prestasi td,
+#prestasi th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: white;
+  box-sizing: border-box;
+}
+
+#prestasi th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
 }
 
 /* menu section */
@@ -301,36 +375,6 @@ body {
   background-color: var(--primary);
 }
 
-/* prestasi */
-
-#prestasi {
-  font-family: "poppins", sans-serif;
-  border-collapse: collapse;
-  width: auto;
-  text-align: center;
-  margin: auto;
-}
-
-#prestasi td,
-#prestasi th {
-  border: 1px solid #ddd;
-  padding: 8px;
-  color: white;
-  box-sizing: border-box;
-}
-
-#prestasi tr:hover {
-  background-color: var(--primary);
-}
-
-#prestasi th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: var(--primary);
-  color: white;
-}
-
 /* Footer */
 footer {
   background-color: var(--primary);
@@ -374,9 +418,13 @@ footer .credit a {
 /* Media Queries */
 
 /* laptop */
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
   html {
     font-size: 75%;
+  }
+
+  .info-pemain {
+    justify-content: center;
   }
 }
 /* tablet */
@@ -463,7 +511,7 @@ footer .credit a {
   }
 }
 /* phone */
-@media (max-width: 450px) {
+@media (max-width: 425px) {
   html {
     font-size: 55%;
   }
