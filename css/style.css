@@ -55,7 +55,7 @@ body {
   display: inline-block;
   font-weight: 400;
   font-size: 1.3rem;
-  margin: 0 1rem;
+  margin: 0 0.8rem;
 }
 
 .navbar .navbar-nav a:hover {
